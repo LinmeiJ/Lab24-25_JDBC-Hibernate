@@ -1,0 +1,9 @@
+@charset "ISO-8859-1";
+.b1{
+	background-image: url("coffee.jpg");
+	background-repeat: no-repeat;
+	color:white;
+	text-align: center;
+	margin-top: 200px;
+}
+
