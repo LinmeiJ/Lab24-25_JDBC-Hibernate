@@ -1,5 +1,7 @@
 package com.coffee.shop.member;
 
+import java.util.Arrays;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -19,6 +21,7 @@ public class Items {
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private Integer id;
+	private byte[] image;
 	
 	
 	public Items() {
@@ -42,6 +45,31 @@ public class Items {
 		this.quantity = quantity;
 		this.price = price;
 		this.id = id;
+	}
+
+	
+	@Override
+	public String toString() {
+		return "Items [name=" + name + ", description=" + description + ", quantity=" + quantity + ", price=" + price
+				+ ", id=" + id + ", image=" + Arrays.toString(image) + "]";
+	}
+
+	public Items(String name, String description, Integer quantity, Double price, Integer id, byte[] image) {
+		super();
+		this.name = name;
+		this.description = description;
+		this.quantity = quantity;
+		this.price = price;
+		this.id = id;
+		this.image = image;
+	}
+
+	public byte[] getImage() {
+		return image;
+	}
+
+	public void setImage(byte[] image) {
+		this.image = image;
 	}
 
 	public Integer getId() {

@@ -20,12 +20,6 @@ public class ItemController {
 		return new ModelAndView("itemList-page", "listItems",dao.displayAll());
 	}
 	
-	@RequestMapping("search")
-	public ModelAndView search(@RequestParam("itemName") String name) {
-		System.out.println(dao.findByName(name));
-		return new ModelAndView("search-result","result", dao.findByName(name));
-	}
-	
 	@RequestMapping("editItem")
 	public ModelAndView getId(@RequestParam("id") Integer id) {
 		return new ModelAndView("update","id", id);

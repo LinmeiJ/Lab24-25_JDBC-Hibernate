@@ -24,6 +24,7 @@
 					<th>Description</th>
 					<th>Quantity/(each)</th>
 					<th>Price</th>
+					<th>Image</th>
 					<th></th>
 					<th></th>
 				</tr>
@@ -35,6 +36,7 @@
 					<td>${item.description }</td>
 					<td>${item.quantity}</td>
 					<td>$${item.price}</td>
+					<td>${item.image}</td>
 					<td> <a href="editItem?id=${item.id}">Edit</a></td>
 					<td> <a href="deleteItem?id=${item.id}" onclick="return confirm('Are you sure you want to delete this item?');">Delete</a></td>
 				</tr>
@@ -43,19 +45,14 @@
 		</table>
 	
 	</div>
-	<form action="search">
-		<h3>Search for an item by its name:
-		<input type="text" name="itemName">
-		<button type="button" class="btn btn-primary">Search</button>
-		</h3>
-	</form>
+	
+	<!-- Add -->
 	<form action="addItem">
 		<h3>
 			<input type="submit" value="Add a new item" >
    		</h3>
 	</form>
-
-</script>
 	
+		
 </body>
 </html>	

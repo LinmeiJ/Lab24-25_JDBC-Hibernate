@@ -25,10 +25,6 @@ public class ItemDao {
 	}
 	
 	
-	public Items findByName(String name) {
-		return eManager.find(Items.class, name);	
-	}
-	
 	//update or add
 	public Items addOrUpdateItem(Items item) {
 		

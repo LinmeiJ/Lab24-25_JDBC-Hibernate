@@ -17,7 +17,7 @@
 		</p>
 	
 	</form>	
-	<form  action="menu">
+	<form  action="go-menu">
 		
 		<h2>Coffee Menu</h2>
 		<p>	
