@@ -12,9 +12,10 @@
     integrity="sha384-9NlqO4dP5KfioUGS568UFwM3lbWf3Uj3Qb7FBHuIuhLoDp3ZgAqPE1/MYLEBPZYM"
     crossorigin="anonymous">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="style.css">
 </head>
-<body>
-	<h1 align ="center">Coffee In Stock</h1>
+<body class="tables">
+	<h1>Coffee In Stock</h1>
 	<br/>
 	<div class="container">
 		<table class="table table-striped" border="1">
@@ -24,7 +25,6 @@
 					<th>Description</th>
 					<th>Quantity/(each)</th>
 					<th>Price</th>
-					<th>Image</th>
 					<th></th>
 					<th></th>
 				</tr>
@@ -36,7 +36,6 @@
 					<td>${item.description }</td>
 					<td>${item.quantity}</td>
 					<td>$${item.price}</td>
-					<td>${item.image}</td>
 					<td> <a href="editItem?id=${item.id}">Edit</a></td>
 					<td> <a href="deleteItem?id=${item.id}" onclick="return confirm('Are you sure you want to delete this item?');">Delete</a></td>
 				</tr>
@@ -47,10 +46,11 @@
 	</div>
 	
 	<!-- Add -->
+
 	<form action="addItem">
-		<h3>
+		<h4>
 			<input type="submit" value="Add a new item" >
-   		</h3>
+   		</h4>
 	</form>
 	
 		

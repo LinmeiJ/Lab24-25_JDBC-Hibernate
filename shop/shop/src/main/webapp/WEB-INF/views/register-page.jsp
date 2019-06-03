@@ -13,18 +13,24 @@
 
 <!-- Latest compiled JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<link rel="stylesheet" type="text/css" href="style.css">
+
 </head>
-<body>
-		<form action="register">
-	<p>
-		First Name: <input type="text" name="firstName"><br/>
-		Last Name: <input type="text" name="lastName"><br/>
-		Email: <input type="text" name="email"><br/>
-		Phone Number: <input type="text" name="phoneNumber"><br/>
-		Password: <input type="text" name="password"><br/>
-		
-		<input type="submit" value="submit">
-	</p>
+<body class="pic">
+	
+	<form action="register">
+				<h3>First Name:</h3>
+						<input type="text" name="firstName"><br/>
+				<h3>Last Name:</h3>
+				 		<input type="text" name="lastName"><br/>
+				<h3>Email: </h3>
+						<input type="text" name="email"><br/>
+				<h3>Phone Number:</h3> 
+						<input type="text" name="phoneNumber"><br/>
+				<h3>Password: </h3>
+						<input type="text" name="password">
+				<input type="submit" value="submit">
 	</form>
+
 </body>
 </html>

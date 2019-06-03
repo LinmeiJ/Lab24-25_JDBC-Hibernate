@@ -6,8 +6,11 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Insert title here</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+
 </head>
-<body>
+<body class="display">
+
 	<form action="display-info">
 	    <table border="1">
 	    <thead>
